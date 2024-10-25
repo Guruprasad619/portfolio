@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "ROBOTO", sans-serif;
+}
+
+.nav,
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-color: #1e1f26;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.nav h1,
+.slider h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 5vw;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.5rem;
+    color: #03dac6;
+    transition: all 0.3s ease;
+    z-index: 3;
+}
+h1:hover {
+    transform: translate3d(0, -10px, 22px);
+    color: #ff0266;
+}
+
+
+h3.span {
+    font-size: 2vw;
+    letter-spacing: 0.7em;
+    font-family: "ROBOTO", sans-serif;
+    font-weight: 300;
+    color: #faebd7;
+    z-index: 4;
+}
+span:hover {
+    color: #ff0266;
+    font-weight: 500;
+    font-size: 2.2vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.background {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+.loader span {
+    color: #faebd7;
+    text-shadow: 0 0 0 #faebd7;
+    -webkit-animation: loading 1s ease-in-out infinite alternate; /* Vendor prefix */
+    animation: loading 1s ease-in-out infinite alternate; /* Standard syntax */
+}
+
+@-webkit-keyframes loading {
+    to {
+        text-shadow: 20px 0 70px #ff0266;
+        color: #ff0266;
+    }
+}
+
+@keyframes loading { /* Added standard keyframes */
+    to {
+        text-shadow: 20px 0 70px #ff0266;
+        color: #ff0266;
+    }
+}
+.loader span {
+    /* Set animation delay based on the index */
+    animation-delay: calc(0.1s * var(--i));
+}
+
+.loader span:nth-child(1) { --i: 0; }
+.loader span:nth-child(2) { --i: 1; }
+.loader span:nth-child(3) { --i: 2; }
+.loader span:nth-child(4) { --i: 3; }
+.loader span:nth-child(5) { --i: 4; }
+.loader span:nth-child(6) { --i: 5; }
+.loader span:nth-child(7) { --i: 6; }
+.loader span:nth-child(8) { --i: 7; }
+.loader span:nth-child(9) { --i: 8; }
+.loader span:nth-child(10) { --i: 9; }
+.loader span:nth-child(11) { --i: 10; }
+.loader span:nth-child(12) { --i: 11; }
+.loader span:nth-child(13) { --i: 12; }
+.loader span:nth-child(14) { --i: 13; }
+.loader span:nth-child(15) { --i: 14; }
+.loader span:nth-child(16) { --i: 15; }
+.loader span:nth-child(17) { --i: 16; }
+.loader span:nth-child(18) { --i: 17; }
+.loader span:nth-child(19) { --i: 18; }
+.loader span:nth-child(20) { --i: 19; }
+.loader span:nth-child(21) { --i: 20; }
+.loader span:nth-child(22) { --i: 21; }
