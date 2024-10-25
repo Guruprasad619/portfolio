@@ -32,7 +32,7 @@ const Home = () => {
       backgroundColor: '#1e1f26',
     }}>
       <iframe
-        src="/home page/index.html"
+        src={process.env.PUBLIC_URL + "/home page/index.html"} // Update this line
         title="Home Page Content"
         style={{
           width: '100%',

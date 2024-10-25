@@ -61,31 +61,31 @@ const CarouselContainer = styled(Box)(({ theme }) => ({
 const projectsData = [
   {
     title: "WEATHER FORECAST APP",
-    imageUrl: "/assets/images/weather.png",
+    imageUrl: process.env.PUBLIC_URL + "/assets/images/weather.png",
     description: "React.js app for searching locations and viewing 6-day weather forecasts with real-time data using API, featuring a live interactive map background.",
     link: "https://github.com/Guruprasad619/Weather-app", // Link for project 1
   },
   {
-    title: "GAME-SPACE: WEB-BASED GAMING PLATFORM  ",
-    imageUrl: "/assets/images/gamespace.png",
+    title: "GAME-SPACE: WEB-BASED GAMING PLATFORM",
+    imageUrl: process.env.PUBLIC_URL + "/assets/images/gamespace.png",
     description: "Game-Space is a web-based gaming platform featuring 21 mini-JavaScript games, crafted using Next.js and TypeScript.",
     link: "https://github.com/Guruprasad619/Game-space", // Link for project 2
   },
   {
-    title: "FACE RECOGNITION-BASED ATTENDANCE SYSTEM ",
-    imageUrl: "/assets/images/attendance.png",
+    title: "FACE RECOGNITION-BASED ATTENDANCE SYSTEM",
+    imageUrl: process.env.PUBLIC_URL + "/assets/images/attendance.png",
     description: "An automated attendance system using OpenCV and face_recognition for real-time face detection, achieving over 90% accuracy.",
     link: "https://github.com/Guruprasad619/Face-Recognition-Based-Attendance-System", // Link for project 3
   },
   {
     title: "INSURANCE FRAUD DETECTION",
-    imageUrl: "/assets/images/fraud.png",
+    imageUrl: process.env.PUBLIC_URL + "/assets/images/fraud.png",
     description: "A Flask web app enabling real-time interaction with a trained model for efficient analysis and prediction of potential fraud cases.",
     link: "https://github.com/Guruprasad619/Insurance-fraud-prediction", // Link for project 4
   },
   {
     title: "DRUG CLASSIFICATION MODEL",
-    imageUrl: "/assets/images/drug.png",
+    imageUrl: process.env.PUBLIC_URL + "/assets/images/drug.png",
     description: "A drug classification model using K-Nearest Neighbors (KNN) to recommend drugs based on patient data from a dataset of 200 records.",
     link: "https://github.com/Guruprasad619/Drug-Classification-", // Link for project 5
   }
@@ -98,9 +98,8 @@ function ProjectReviewCard({ title, imageUrl, description, link }) {
     <ProjectCard>
       <CardHeader
         avatar={
-          <Avatar src="/assets/images/logo.jpg" aria-label="project" />
+          <Avatar src={process.env.PUBLIC_URL + "/assets/images/logo.jpg"} aria-label="project" />
         }
-        // Removed action for the three dots icon
         title={title}
       />
       <CardMedia
@@ -143,7 +142,7 @@ function Projects() {
 
   return (
     <section id="projects" style={{ position: 'relative', padding: '20px 0', backgroundColor: '#1e1f26' }}>
-      <h2 style={{ color: '#03dac6', textAlign: 'center', marginBottom: '0px',marginTop:'-8px' }}> 
+      <h2 style={{ color: '#03dac6', textAlign: 'center', marginBottom: '0px', marginTop: '-8px' }}> 
         PROJECTS
       </h2>
       <CarouselContainer style={{ paddingTop: '15px' }}> 

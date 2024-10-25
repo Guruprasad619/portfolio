@@ -1,19 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { FaBars, FaMusic} from 'react-icons/fa';
+import { FaBars, FaMusic } from 'react-icons/fa';
 import Menu from './Menu';
 import './Navbar.css';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // Removed isDarkTheme state
   const [isPlaying, setIsPlaying] = useState(false);
-  const [audio] = useState(new Audio('/assets/audio/music.mp3')); // Replace with your music file path
+  const [audio] = useState(new Audio(process.env.PUBLIC_URL + '/assets/audio/music.mp3')); // Update this line
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  // Removed toggleTheme function
 
   const toggleMusic = () => {
     if (isPlaying) {
@@ -51,7 +48,7 @@ function Navbar() {
         </div>
         <div className="navbar-right">
           <a href="/" className="avatar-link">
-            <img src="/assets/images/logo.jpg" alt="Avatar" className="avatar" /> 
+            <img src={process.env.PUBLIC_URL + "/assets/images/logo.jpg"} alt="Avatar" className="avatar" /> {/* Update this line */}
           </a>
         </div>
       </nav>
@@ -61,5 +58,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
