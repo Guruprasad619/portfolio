@@ -30,7 +30,7 @@ function About() {
         ABOUT ME
       </h2>
       <Card2
-        image="/assets/images/profile1.png"
+        image={process.env.PUBLIC_URL + "/assets/images/profile1.png"} // Update this line
         title="Guruprasad G M"
         subtitle="Aspiring Software Developer"
         description="Computer Science student exploring full-stack development and AI/ML through hands-on projects. Eager to learn and grow in the world of technology. Passionate about creating user-friendly applications and solving real-world problems through code."
