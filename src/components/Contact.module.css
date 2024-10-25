@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  background: #1e1f26;
+  font-family: "Euclid Circular A", "Poppins";
+  color: #d6dfed;
+  height: 100%;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.background svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(3) scaleX(2.25);
+  transform-origin: bottom;
+  box-sizing: border-box;
+  display: block;
+  pointer-events: none;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 270px;
+}
+
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 30px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.socials {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 24px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #ff0266;
+}
+
+.legal {
+  font-size: 12px;
+  margin: 0;
+  color: black;
+}
+
+@media (min-width: 421px) {
+  .section {
+    align-items: center;
+    padding-left: 0;
+    gap: 20px;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  padding-bottom: 100px; /* Increased padding at the bottom */
+}
+
+.heading {
+  color: #03dac6;
+  text-align: center; /* Fixed property name */
+  font-size: 1.5rem; /* Fixed property name */
+  position: absolute;
+  top: 40px; /* Increased from 20px to 40px */
+  left: 50%;
+  transform: translateX(-50%); /* Removed quotes */
+  padding: 15px 15px; /* Fixed typo in '50pX' */
+  z-index: 1; /* Fixed property name */
+}
+
+/* Add margin to the form to create space below the heading */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px; /* Slightly reduced max-width */
+  margin-bottom: 2rem;
+  margin-top: 20px; /* Added margin to move form down */
+}
+
+.form label {
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+  border: 1px solid snow;
+  border-radius: 5px;
+}
+
+.form textarea {
+  height: 80px; /* Reduced height of textarea */
+}
+
+.form button {
+  padding: 0.5rem 1rem;
+  background-color: #03dac6;
+  color: #1e1f26;
+  border: none;
+  cursor: pointer;
+  font-size: 15px; /* Increased font size */
+  font-weight: bold; 
+  border-radius: 5px;
+}
+
+.form button:hover {
+  background-color: #ff0266;
+  color: black;
+}

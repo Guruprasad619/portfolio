@@ -1,0 +1,75 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem;
+  background-color: #1e1f26; /* Set background to transparent */
+}
+.navbar-center {
+  flex: 1; /* Allow this div to grow and take available space */
+  display: flex; /* Enable flexbox for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin-left: -1rem;
+}
+.navbar-right{
+  margin-right: 0.5rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.icon-button, .menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  color: snow;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+
+}
+.menu-button:hover {
+  color: #03dac6; /* Change color on hover */
+}
+
+.menu-button svg {
+  margin-right: 0.5rem;
+}
+.icon-button {
+  justify-content: center; /* Center content horizontally */
+}
+
+/* Music icon styles */
+.icon-button.playing {
+  color: #03dac6;
+}
+
+.navbar-right .avatar {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area */
+}
+
+/* Add this class for the music icon button */
+.music-icon-button {
+  display: flex; /* Enable flexbox for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  margin: 0 auto; /* Center the button within its container */
+  padding: 0; /* Remove any padding that might affect alignment */
+  width: 100%; /* Ensure it takes full width for centering */
+  max-width: 50px; /* Set a max width if needed */
+}

@@ -1,0 +1,120 @@
+/* Navigation Buttons Styling */
+.navigation-buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.nav-circle {
+  background-color: #03dac6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 2px solid #03dac6; /* Increased border width */
+  position: relative;
+}
+
+/* Modified radiation/pulse effect */
+.nav-circle::before,
+.nav-circle::after {
+  content: '';
+  position: absolute;
+  top: -2px;  /* Align with the border */
+  left: -2px;
+  width: calc(100% + 4px);  /* Extend beyond the element */
+  height: calc(100% + 4px);
+  border-radius: 50%;
+  border: 2px solid #03dac6;
+  animation: borderPulse 2s infinite;
+  pointer-events: none;
+}
+
+.nav-circle::after {
+  animation-delay: 0.5s;
+}
+
+@keyframes borderPulse {
+  0% {
+    transform: scale(1);
+    border-color: #03dac6;
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    border-color: #03dac6;
+    opacity: 0;
+  }
+}
+
+/* Modified hover state */
+.nav-circle:hover::before,
+.nav-circle:hover::after {
+  border-color: #ff0266;
+}
+
+.nav-circle:hover {
+  background-color: #ff0266;
+  border-color: #ff0266;
+}
+
+.nav-icon {
+  color: black;
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Transition Bars Effect */
+.nav-bars {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  pointer-events: none;
+}
+
+.nav-bars > div {
+  background-image: linear-gradient(145deg, rgba(232, 87, 237, 0.15) 0%,rgba(109, 137, 69, 0.15) 100%),linear-gradient(75deg, rgb(33, 138, 184),rgb(0, 241, 181));
+  transform: translateX(-100%);
+}
+
+/* Increase the duration and use consistent timing for all bars */
+.nav-bars.show > div {
+  animation: show-nav 0.5s both ease-in-out;
+}
+
+.nav-bars.hide > div {
+  animation: hide-nav 0.5s both ease-in-out;
+}
+
+@keyframes show-nav {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes hide-nav {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
