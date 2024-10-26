@@ -38,7 +38,6 @@ This portfolio website is designed to highlight my expertise in various programm
 - **Project Carousel**: A visually appealing carousel to showcase my projects.
 - **Navigation Buttons**: Easy navigation between different sections of the portfolio.
 
-- 
 ## How to Run the Project
 
 To run this project locally, follow these steps:
