@@ -52,14 +52,16 @@ To run this project locally, follow these steps:
    
    Make sure you have Node.js installed. Then, run the following command to install the required 
    dependencies:
-      npm install
    
-3. **Start the Development Server**:
+      `npm install`
+   
+4. **Start the Development Server**:
    
    After the dependencies are installed, you can start the development server with:
-      npm start
+   
+      `npm start`
 
-4. **Open in Browser**:
+6. **Open in Browser**:
    
    Open your browser and navigate to `http://localhost:3000` to view the portfolio.
 
