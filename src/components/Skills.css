@@ -63,8 +63,8 @@
   position: absolute;
   width: var(--_diameter);
   aspect-ratio: 1 / 1;
-  left: 45%;
-  top: 45%;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   list-style-type: none;
   position: relative;

@@ -7,11 +7,11 @@ const Skills = () => {
   const navigate = useNavigate(); // Initialize useNavigate
 
   const skills = [
-    "Communication", "Problem-solving", "Teamwork", "Creativity", "Software Engineering",
     "C", "Java", "Python", "HTML", "CSS", "JavaScript", "Algorithms",
     "Django", "Flask", "React.js", "MySQL", "Git", "GitHub",
     "AIML", "Data Science", "API", "Next.js",
-    "VS Code", "OpenCV", "Data Structures"
+    "VS Code", "OpenCV", "Data Structures",
+    "Problem-solving", "Teamwork", "Creativity"
   ];
 
   return (

@@ -137,11 +137,11 @@
 }
 
 .bars.show > div {
-  animation: show 0.7s both ease-in-out;
+  animation: show 0.4s both ease-in-out;
 }
 
 .bars.hide > div {
-  animation: hide 0.7s both ease-in-out;
+  animation: hide 0.4s both ease-in-out;
 }
 
 @keyframes show {

@@ -8,7 +8,7 @@ body {
 
 .background {
   position: absolute;
-  z-index: -1;
+  z-index: -1; /* Keep the background SVG behind other elements */
   top: 0;
   left: 0;
   right: 0;
@@ -34,7 +34,7 @@ body {
   bottom: 0;
   display: flex;
   width: 100%;
-  height: 270px;
+  height: 320px;
 }
 
 
@@ -42,7 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 30px;
+  gap: 20px;
   padding-bottom: 80px;
   padding-left: 20px;
   width: 100%;
@@ -54,6 +54,8 @@ body {
   display: flex;
   justify-content: flex-start;
   gap: 20px;
+  padding-bottom: 0px;
+  
 }
 
 .icon {
@@ -89,29 +91,31 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  padding-bottom: 100px; /* Increased padding at the bottom */
+  padding-bottom: 50px; /* Decreased padding at the bottom */
+  position: relative; /* Ensure the container is positioned relative for absolute children */
+  z-index: 1; /* Ensure the contact container is above the background */
 }
 
 .heading {
   color: #03dac6;
-  text-align: center; /* Fixed property name */
-  font-size: 1.5rem; /* Fixed property name */
-  position: absolute;
-  top: 40px; /* Increased from 20px to 40px */
-  left: 50%;
-  transform: translateX(-50%); /* Removed quotes */
-  padding: 15px 15px; /* Fixed typo in '50pX' */
-  z-index: 1; /* Fixed property name */
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative; /* Change to relative to keep it above the background */
+  z-index: 2; /* Ensure the heading is above the background */
+  margin-top: -20px; /* Move the heading upwards */
+  margin-bottom: 20px; /* Add space below the heading */
 }
 
-/* Add margin to the form to create space below the heading */
+/* Form styles */
 .form {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 400px; /* Slightly reduced max-width */
-  margin-bottom: 2rem;
-  margin-top: 20px; /* Added margin to move form down */
+  margin-bottom: 1rem; /* Decreased bottom margin */
+  margin-top: 0px; /* Added negative margin to move the form upwards */
+  position: relative; /* Ensure the form is positioned relative */
+  z-index: 2; /* Ensure the form is above the background */
 }
 
 .form label {
@@ -134,13 +138,13 @@ body {
 
 .form button {
   padding: 0.5rem 1rem;
-  background-color: #03dac6;
-  color: #1e1f26;
-  border: none;
+  background-color: snow;
+  color: black;
+  border: 1px solid black;
   cursor: pointer;
   font-size: 15px; /* Increased font size */
   font-weight: bold; 
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .form button:hover {

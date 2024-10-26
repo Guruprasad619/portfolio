@@ -94,11 +94,11 @@
 
 /* Increase the duration and use consistent timing for all bars */
 .nav-bars.show > div {
-  animation: show-nav 0.5s both ease-in-out;
+  animation: show-nav 0.4s both ease-in-out;
 }
 
 .nav-bars.hide > div {
-  animation: hide-nav 0.5s both ease-in-out;
+  animation: hide-nav 0.4s both ease-in-out;
 }
 
 @keyframes show-nav {

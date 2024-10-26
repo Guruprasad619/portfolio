@@ -13,7 +13,7 @@ const NavigationButtons = ({ onNext, onPrevious }) => {
     setTimeout(() => {
       onNext(); // Call the onNext function passed as a prop
       setTransitioning(false);
-    }, 700); // Match this delay with the transition duration in CSS
+    }, 400); // Match this delay with the transition duration in CSS
   };
 
   const handlePreviousClick = () => {
@@ -23,7 +23,7 @@ const NavigationButtons = ({ onNext, onPrevious }) => {
     setTimeout(() => {
       onPrevious(); // Call the onPrevious function passed as a prop
       setTransitioning(false);
-    }, 700); // Match this delay with the transition duration in CSS
+    }, 400); // Match this delay with the transition duration in CSS
   };
 
   return (

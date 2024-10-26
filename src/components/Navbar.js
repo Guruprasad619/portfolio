@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaMusic } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import Menu from './Menu';
 import './Navbar.css';
 
@@ -47,9 +48,9 @@ function Navbar() {
           </button>
         </div>
         <div className="navbar-right">
-          <a href="/" className="avatar-link">
-            <img src={process.env.PUBLIC_URL + "/assets/images/logo.jpg"} alt="Avatar" className="avatar" /> {/* Update this line */}
-          </a>
+          <Link to="/" className="avatar-link"> {/* Use Link instead of a */}
+            <img src={process.env.PUBLIC_URL + "/assets/images/logo.jpg"} alt="Avatar" className="avatar" />
+          </Link>
         </div>
       </nav>
       <Menu isOpen={isMenuOpen} onClose={toggleMenu} isDarkTheme={true} /> 

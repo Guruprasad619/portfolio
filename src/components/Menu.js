@@ -29,8 +29,8 @@ function Menu({ isOpen, onClose, isDarkTheme }) {
       setTimeout(() => {
         navigate(path);
         setTransitioning(false);
-      },700); // Match with the duration of the rectangle effect
-    }, 300); // Delay for menu close animation
+      },400); // Match with the duration of the rectangle effect
+    }, 200); // Delay for menu close animation
   };
 
   return (
