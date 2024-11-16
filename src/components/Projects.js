@@ -63,13 +63,13 @@ const projectsData = [
     title: "WEATHER FORECAST APP",
     imageUrl: process.env.PUBLIC_URL + "/assets/images/weather.png",
     description: "React.js app for searching locations and viewing 6-day weather forecasts with real-time data using API, featuring a live interactive map background.",
-    link: "https://github.com/Guruprasad619/Weather-app", // Link for project 1
+    link: "https://guruprasad619.github.io/Weather-app/", // Link for project 1
   },
   {
     title: "GAME-SPACE: WEB-BASED GAMING PLATFORM",
     imageUrl: process.env.PUBLIC_URL + "/assets/images/gamespace.png",
     description: "Game-Space is a web-based gaming platform featuring 21 mini-JavaScript games, crafted using Next.js and TypeScript.",
-    link: "https://github.com/Guruprasad619/Game-space", // Link for project 2
+    link: "https://guruprasad619.github.io/Game-space/", // Link for project 2
   },
   {
     title: "FACE RECOGNITION-BASED ATTENDANCE SYSTEM",
@@ -142,7 +142,7 @@ function Projects() {
 
   return (
     <section id="projects" style={{ position: 'relative', padding: '20px 0', backgroundColor: '#1e1f26' }}>
-      <h2 style={{ color: '#03dac6', textAlign: 'center', marginBottom: '0px', marginTop: '-8px' }}> 
+      <h2 style={{ color: '#03dac6', textAlign: 'center', marginBottom: '0px', marginTop: '-8px',fontSize: '1.5rem' }}> 
         PROJECTS
       </h2>
       <CarouselContainer style={{ paddingTop: '15px' }}> 

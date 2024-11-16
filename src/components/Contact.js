@@ -1,7 +1,8 @@
 import React from 'react';
 import { toast, Toaster } from 'react-hot-toast'; // Import toast and Toaster
 import styles from './Contact.module.css';
-import { FaTwitter, FaLinkedinIn, FaWhatsapp, FaEnvelope, FaGithub } from 'react-icons/fa';
+import { FaLinkedinIn, FaWhatsapp, FaEnvelope, FaGithub } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 import NavigationButtons from './NavigationButtons'; // Import the NavigationButtons component
 import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
@@ -142,7 +143,7 @@ const Contact = () => {
         </div>
         <section className={styles.section}>
           <ul className={styles.socials}>
-            <li><a href="https://x.com/GuruprasadGM12" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaTwitter className={styles.icon} /></a></li>
+            <li><a href="https://x.com/GuruprasadGM12" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaXTwitter className={styles.icon} /></a></li>
             <li><a href="https://linkedin.com/in/guruprasadgm" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedinIn className={styles.icon} /></a></li>
             <li><a href="https://wa.me/+919380885413" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp className={styles.icon} /></a></li>
             <li><a href="mailto:guruprasadgm404@gmail.com" aria-label="Email"><FaEnvelope className={styles.icon} /></a></li>

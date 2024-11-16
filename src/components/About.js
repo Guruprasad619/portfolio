@@ -21,7 +21,7 @@ function About() {
         textAlign: 'center',
         fontSize: '1.5rem',
         position: 'absolute',
-        top: '10px',
+        top: '-15px',
         left: '50%',
         transform: 'translateX(-50%)',
         padding: '-10px 15px',

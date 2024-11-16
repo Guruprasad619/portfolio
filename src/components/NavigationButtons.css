@@ -19,28 +19,11 @@
   height: 40px;
   cursor: pointer;
   transition: background-color 0.3s;
-  border: 2px solid #03dac6; /* Increased border width */
+  border: 1px solid #ffff; /* Increased border width */
   position: relative;
 }
 
-/* Modified radiation/pulse effect */
-.nav-circle::before,
-.nav-circle::after {
-  content: '';
-  position: absolute;
-  top: -2px;  /* Align with the border */
-  left: -2px;
-  width: calc(100% + 4px);  /* Extend beyond the element */
-  height: calc(100% + 4px);
-  border-radius: 50%;
-  border: 2px solid #03dac6;
-  animation: borderPulse 2s infinite;
-  pointer-events: none;
-}
 
-.nav-circle::after {
-  animation-delay: 0.5s;
-}
 
 @keyframes borderPulse {
   0% {
@@ -88,7 +71,7 @@
 }
 
 .nav-bars > div {
-  background-image: linear-gradient(145deg, rgba(232, 87, 237, 0.15) 0%,rgba(109, 137, 69, 0.15) 100%),linear-gradient(75deg, rgb(33, 138, 184),rgb(0, 241, 181));
+background-color: #03dac6;
   transform: translateX(-100%);
 }
 

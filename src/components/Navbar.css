@@ -10,6 +10,7 @@
   display: flex; /* Enable flexbox for centering */
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
+  height: 100%; /* Ensure it takes full height of the navbar */
 }
 .navbar-left {
   display: flex;
@@ -27,12 +28,17 @@
 }
 
 .icon-button, .menu-button {
+  display: flex;
   background: none;
   border: none;
   cursor: pointer;
   font-size: 1rem;
   margin: 0 0.5rem;
   color: snow;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  margin: 2; /* Set margin to 0 to prevent unwanted spacing */
+  padding: 0; /* Set padding to 0 */
 }
 
 .menu-button {
@@ -48,7 +54,15 @@
   margin-right: 0.5rem;
 }
 .icon-button {
+  display: flex; /* Ensure this is a flex container */
   justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 0.5rem; /* Adjust margins if necessary */
+  color: snow;
 }
 
 /* Music icon styles */
@@ -63,13 +77,3 @@
   object-fit: cover; /* Ensures the image covers the area */
 }
 
-/* Add this class for the music icon button */
-.music-icon-button {
-  display: flex; /* Enable flexbox for centering */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  margin: 0 auto; /* Center the button within its container */
-  padding: 0; /* Remove any padding that might affect alignment */
-  width: 100%; /* Ensure it takes full width for centering */
-  max-width: 50px; /* Set a max width if needed */
-}

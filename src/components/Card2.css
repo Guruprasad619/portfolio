@@ -1,7 +1,7 @@
 :root {
-   background: #1e1f26;
-  --card-bg-dark:repeating-linear-gradient(135deg, rgba(0,0,0,0.03) 0px, rgba(0,0,0,0.03) 2px,transparent 2px, transparent 4px),linear-gradient(45deg, rgb(18, 105, 233),rgb(166, 255, 155));
-  --text-dark: #102B3F;
+  background: #1e1f26;
+  --card-bg-dark:radial-gradient(circle at 40% 91%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 50%,rgba(229, 229, 229,0.04) 50%, rgba(229, 229, 229,0.04) 100%),radial-gradient(circle at 66% 97%, rgba(36, 36, 36,0.04) 0%, rgba(36, 36, 36,0.04) 50%,rgba(46, 46, 46,0.04) 50%, rgba(46, 46, 46,0.04) 100%),radial-gradient(circle at 86% 7%, rgba(40, 40, 40,0.04) 0%, rgba(40, 40, 40,0.04) 50%,rgba(200, 200, 200,0.04) 50%, rgba(200, 200, 200,0.04) 100%),radial-gradient(circle at 15% 16%, rgba(99, 99, 99,0.04) 0%, rgba(99, 99, 99,0.04) 50%,rgba(45, 45, 45,0.04) 50%, rgba(45, 45, 45,0.04) 100%),radial-gradient(circle at 75% 99%, rgba(243, 243, 243,0.04) 0%, rgba(243, 243, 243,0.04) 50%,rgba(37, 37, 37,0.04) 50%, rgba(37, 37, 37,0.04) 100%),linear-gradient(450deg, rgb(34, 222, 237),rgb(218,253,255));
+  --text-dark: #121017;
   --button-border-dark: #1e1f26;
   --button-text-primary-dark: #121017;
 }
@@ -24,11 +24,12 @@
   width: 75vw;
   max-width: 650px;
   padding: 70px 30px 50px 20px;
-  background: var(--card-bg-light);
   border-radius: 24px;
   transition: background-color 0.3s, color 0.3s;
-  border: 3px solid white;
+  border: 2px solid whitesmoke;
+  color: white; /* Set text color to white */
   transition: transform 0.3s, box-shadow 0.3s;
+  transform: translateY(10px);
 }
 
 .card-2:hover {
@@ -45,7 +46,7 @@
   margin-right: 30px;
   border-radius: inherit;
   transition: border-radius 0.3s;
-  border: 2px solid white;
+  border: 2px solid whitesmoke;
 }
 
 .card-2 h2 {
@@ -54,7 +55,7 @@
   margin-top: 0;
   margin-right: 30px;
   margin-bottom: 6px;
-  color: #03dac6;
+  color: white; /* Set heading color to white */
 }
 
 .card-2 h3 {
@@ -62,7 +63,7 @@
   font-weight: 400;
   margin: 0 0 12px;
   opacity: 1;
-  color: #1e1f26;
+  color: white; /* Set subtitle color to white */
 }
 
 .card-2 p {
@@ -71,7 +72,7 @@
   margin-bottom: 30px;
   opacity: 0.8;
   text-align: justify;
-  color: #1e1f26;
+  color: white; /* Set paragraph color to white */
 }
 
 .card-2 .buttons {
@@ -80,8 +81,9 @@
 }
 
 .card-2 button {
-  border: 1px solid ;
-  background: snow;
+  border: 1px solid black; /* Set border color to black */
+  background: white; /* Set background color to white */
+  color: black; /* Set text color to black */
   width: 40%;
   min-width: 100px;
   text-align: center;
@@ -92,7 +94,6 @@
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
-
 
 /* Dark theme styles */
 .dark-theme .page.card-2-example-page {
@@ -121,7 +122,7 @@
   color: black;
 }
 
-@media (width <= 600px) {
+@media (max-width: 600px) {
   .card-2 {
     margin: 0 40px;
     padding-left: 50px;
@@ -159,7 +160,7 @@
   }
 }
 
-@media (width <= 420px) {
+@media (max-width: 420px) {
   .card-2 img {
     height: 50vw;
     width: 50vw;
@@ -167,6 +168,3 @@
     margin: -140px 0 30px 0;
   }
 }
-
-
-
