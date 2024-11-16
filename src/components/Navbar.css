@@ -37,7 +37,7 @@
   color: snow;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
-  margin: 2; /* Set margin to 0 to prevent unwanted spacing */
+  margin: 0.5rem; /* Set margin to 0 to prevent unwanted spacing */
   padding: 0; /* Set padding to 0 */
 }
 
