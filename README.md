@@ -78,5 +78,4 @@ Feel free to reach out to me for any inquiries or collaborations:
 - **Email**: guruprasadgm404@gmail.com
 - **LinkedIn**: [Guruprasad G M](https://linkedin.com/in/guruprasadgm)
 - **GitHub**: [Guruprasad619](https://github.com/Guruprasad619)
-- 
 Thank you for visiting my portfolio! I hope you enjoy exploring my work.
