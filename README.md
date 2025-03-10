@@ -1,4 +1,4 @@
-# Portfolio Website README
+# README
 
 Welcome to my portfolio website! This project showcases my skills, projects, and experiences as an aspiring software developer. You can view the live version of my portfolio at the following link:
 [My Portfolio](https://guruprasad619.github.io/portfolio)
