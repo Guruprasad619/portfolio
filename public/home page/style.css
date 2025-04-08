@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+
 body {
     font-family: "ROBOTO", sans-serif;
 }
@@ -66,6 +72,13 @@ a {
     right: 0;
     z-index: 0;
 }
+
+canvas.background {
+    width: 100%;
+    height: 100%;
+    display: block; /* Ensure no extra space */
+}
+
 .loader span {
     color: #faebd7;
     text-shadow: 0 0 0 #faebd7;
