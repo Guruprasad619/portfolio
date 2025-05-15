@@ -88,6 +88,12 @@ const projectsData = [
     imageUrl: process.env.PUBLIC_URL + "/assets/images/drug.png",
     description: "A drug classification model using K-Nearest Neighbors (KNN) to recommend drugs based on patient data from a dataset of 200 records.",
     link: "https://github.com/Guruprasad619/Drug-Classification-", // Link for project 5
+  },
+  {
+    title: "CAREER NAVIGATOR",
+    imageUrl: process.env.PUBLIC_URL + "/assets/images/cn.jpg",
+    description: "An AI-driven coding interview platform offering personalized preparation with company-specific questions and an interactive editor.",
+    link: "https://github.com/Likith077/Career-Navigator.git", // Link for project 6
   }
   // ... (other project data)
 ];
