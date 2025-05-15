@@ -17,7 +17,7 @@ export const Card2 = ({
         <button className="button" onClick={() => {
           // Specify the path to your PDF file in the assets/pdfs folder
           const link = document.createElement('a');
-          link.href = process.env.PUBLIC_URL + '/assets/images/latest_resume.pdf'; // Updated path to the PDF file
+          link.href = process.env.PUBLIC_URL + '/assets/images/Latest_resume.pdf'; // Updated path to the PDF file
           link.download = 'Guruprasadgm_resume.pdf'; // Name of the downloaded file
           document.body.appendChild(link); // Append the link to the body
           link.click(); // Trigger the download
