@@ -93,7 +93,7 @@ const projectsData = [
     title: "CAREER NAVIGATOR",
     imageUrl: process.env.PUBLIC_URL + "/assets/images/cn.jpg",
     description: "An AI-driven coding interview platform offering personalized preparation with company-specific questions and an interactive editor.",
-    link: "https://github.com/Likith077/Career-Navigator.git", // Link for project 6
+    link: "https://career-navigator-iota.vercel.app/", // Link for project 6
   }
   // ... (other project data)
 ];
